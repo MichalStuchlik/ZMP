@@ -117,7 +117,7 @@ h1 {
 
 }
 #benefits {
-    background-image: url('/img/basketball2.jpg');
+    background-image: url('https://michalstuchlik.github.io/ZMP/img/basketball2.jpg');
     background-size: cover; /* Obrázek se přizpůsobí celému prostoru */
     background-position: center; /* Obrázek zarovnán na střed */
     background-repeat: no-repeat; /* Zabrání opakování obrázku */

@@ -82,28 +82,28 @@ h2 {
 }
 
 .card-football {
-    background-image: url('/img/pexels-pixmike-413195.jpg'); /* Cesta k obrázku fotbalu */
+    background-image: url('https://michalstuchlik.github.io/ZMP/img/pexels-pixmike-413195.jpg'); /* Cesta k obrázku fotbalu */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .card-individual{
-    background-image: url('/img/track.jpg');
+    background-image: url('https://michalstuchlik.github.io/ZMP/img/track.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .card-martial{
-    background-image: url('/img/allen-tanzadeh-js6cGb_SMKk-unsplash.jpg');
+    background-image: url('https://michalstuchlik.github.io/ZMP/img/allen-tanzadeh-js6cGb_SMKk-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .card-extreme{
-    background-image: url('/img/snowboard.jpg');
+    background-image: url('https://michalstuchlik.github.io/ZMP/img/snowboard.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
