@@ -1,0 +1,198 @@
+/* Základní styly těla */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigace */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+.menu li a:hover {
+    background-color: #40E0D0;
+    border-radius: 5px;
+}
+
+/* Hamburger menu */
+.burger-menu {
+    display: none; /* Skryté na velkých obrazovkách */
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1000; /* Přenesení do popředí */
+}
+
+h2 {
+    color: turquoise;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Sloupce se přizpůsobí velikosti */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Karty */
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Nutné pro poziciování overlay */
+}
+
+.card-football {
+    background-image: url('/img/pexels-pixmike-413195.jpg'); /* Cesta k obrázku fotbalu */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-individual{
+    background-image: url('/img/track.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-martial{
+    background-image: url('/img/allen-tanzadeh-js6cGb_SMKk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-extreme{
+    background-image: url('/img/snowboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: turquoise;
+    box-shadow: grey;
+    position: relative;
+    z-index: 1; /* Zajišťuje, že text není zastíněn pozadím */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Přidání stínu */
+}
+
+.card p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: grey;
+    position: relative;
+    z-index: 1; /* Zajišťuje, že text není zastíněn pozadím */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Přidání stínu */
+}
+
+.card-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: turquoise;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    background-color: #20b2aa;
+}
+
+/* Přidání overlay pro zvýraznění textu */
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Poloprůhledná tmavá vrstva */
+    z-index: 0; /* Zajišťuje, že overlay není vidět, když není aktivní */
+    transition: opacity 0.3s;
+}
+
+.card:hover:before {
+    opacity: 1; /* Zobrazit overlay při najetí myší */
+}
+
+.card:hover h3, .card:hover p {
+    color: white; /* Změna barvy textu při najetí myší */
+}
+
+/* Patička */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responzivní styly */
+@media (max-width: 790px) {
+    .menu {
+        display: none; /* Skryté na menších zařízeních */
+        flex-direction: column; /* Položky budou pod sebou */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #000;
+        width: 200px;
+        text-align: right;
+    }
+
+    .menu.active {
+        display: flex; /* Zobrazí se po kliknutí na burger menu */
+    }
+
+    .burger-menu {
+        display: block; /* Viditelné pouze na menších obrazovkách */
+    }
+}

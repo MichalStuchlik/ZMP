@@ -1,0 +1,164 @@
+/* Základní styly těla */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+/* Navigace */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+.menu li a:hover {
+    background-color: #40E0D0;
+    border-radius: 5px;
+}
+
+/* Hamburger menu */
+.burger-menu {
+    display: none; /* Skryté na velkých obrazovkách */
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1000; /* Přenesení do popředí */
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.centered-video {
+    max-width: 80%;
+    height: auto;
+}
+/* Nadpisy */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #40E0D0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Odstavce */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 10%;
+    color: black;
+}
+
+/* Tlačítko */
+.cta-button {
+    display:flex;
+    justify-content: center;
+    max-width: max-content;
+    padding: 15px 30px;
+    margin: 30px;
+    background-color: #40E0D0;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #20B2AA;
+}
+
+/* Patička */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    color: turquoise;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0;
+    padding:20px;
+
+}
+#benefits {
+    background-image: url('/img/basketball2.jpg');
+    background-size: cover; /* Obrázek se přizpůsobí celému prostoru */
+    background-position: center; /* Obrázek zarovnán na střed */
+    background-repeat: no-repeat; /* Zabrání opakování obrázku */
+    color: black; /* Barva textu pro lepší kontrast */
+    padding: 50px 20px; /* Dodá prostoru kolem obsahu */
+
+}
+
+/* Responzivní styly */
+@media (max-width: 790px) {
+    .menu {
+        display: none; /* Skryté na menších zařízeních */
+        flex-direction: column; /* Položky budou pod sebou */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #000;
+        width: 200px;
+        text-align: right;
+    }
+
+    .menu.active {
+        display: flex; /* Zobrazí se po kliknutí na burger menu */
+    }
+
+    .burger-menu {
+        display: block; /* Viditelné pouze na menších obrazovkách */
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 5%;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
