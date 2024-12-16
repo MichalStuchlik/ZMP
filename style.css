@@ -74,28 +74,9 @@ p {
     text-align: justify;
     padding: 0 10%;
     color: black;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
 }
 
-/* Tlačítko */
-.cta-button {
-    display:flex;
-    justify-content: center;
-    max-width: max-content;
-    padding: 15px 30px;
-    margin: 30px;
-    background-color: #40E0D0;
-    color: #000;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.cta-button:hover {
-    background-color: #20B2AA;
-}
 
 /* Patička */
 footer {
@@ -123,8 +104,11 @@ h1 {
     background-repeat: no-repeat; /* Zabrání opakování obrázku */
     color: black; /* Barva textu pro lepší kontrast */
     padding: 50px 20px; /* Dodá prostoru kolem obsahu */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
 
 }
+
+
 
 /* Responzivní styly */
 @media (max-width: 790px) {
