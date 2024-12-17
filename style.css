@@ -108,6 +108,30 @@ h1 {
 
 }
 
+.button-container {
+    display: flex;
+    justify-content: center; /* Zarovná horizontálně */
+    align-items: center; /* Zarovná vertikálně */
+    margin: 0;
+}
+
+/* Styly tlačítka */
+.cta-button {
+    padding: 15px 30px;
+    background-color: turquoise;
+    width:max-content;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none; /* Odstraní podtržení, pokud je odkaz */
+}
+
+/* Hover efekt */
+.cta-button:hover {
+    background-color: #20b2aa; /* Tmavší odstín tyrkysové */
+}
 
 
 /* Responzivní styly */
